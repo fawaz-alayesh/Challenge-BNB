@@ -13,7 +13,7 @@
 | Stap        | Taak                                           | Verwachte tijdsduur | Status |
 | ----------- | ---------------------------------------------- | ------------------- | ------ |
 | Planning    | Planning maken                                 | 00:30 u             | Bezig  |
-| Ontwerpen   | Mockup van BNB-site maken                      |                     |        |
+| Ontwerpen   | Mockup van BNB-site maken                      | 01:30 u             |        |
 | ...         | Styling van elementen bepalen                  |                     |        |
 | Realiseren  | Bestanden aanmaken                             |                     |        |
 | ...         |                                                |                     |        |
