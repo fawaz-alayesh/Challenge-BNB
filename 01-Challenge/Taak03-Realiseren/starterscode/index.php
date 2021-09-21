@@ -156,7 +156,6 @@ if (is_object($db_conn->query($sqlQuery))) { //deze if-statement controleert of 
                     $bedden= $beddenprijs[$gekozenhuis];  
                     
                     }
-                   
 
                 ?>
                 <?php endforeach; ?>
@@ -165,12 +164,10 @@ if (is_object($db_conn->query($sqlQuery))) { //deze if-statement controleert of 
                 <div class="bookedHome"></div>
                 <div class="totalPriceBlock">Totale prijs &euro;<span class="totalPrice"><?php if(isset($_POST['submit'])){
                      if(isset($_POST['beddengoed']) && $_POST['beddengoed'] == "ja"){
-                        echo $all=($nummerhuis * $aantal_dagen) * $aantal_personen + $bedden;
+                        echo $all=($nummerhuis * $aantal_dagen) * $aantal_personen + ($bedden*$aantal_personen);
                      } elseif(isset($_POST['beddengoed']) && $_POST['beddengoed'] == "nee"){
-                         echo $totaal=($nummerhuis * $aantal_dagen) * $aantal_personen ;
-                     }elseif(isset($_POST['beddengoed']) && $_POST['beddengoed'] != null){
-                         echo "" ;
-                     }
+                         echo $totaal=($nummerhuis * $aantal_dagen) * $aantal_personen ;}
+                 
                 }
                 else{
                     echo"";
